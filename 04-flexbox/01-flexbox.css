@@ -1,4 +1,5 @@
 .flex-container {
+  display: flex;
   background-color: rgb(190, 190, 231);
 }
 
@@ -6,21 +7,84 @@
 
 .flex-container-1 {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  margin: 0 auto;
+  max-width: 500px;
 }
 
+.flex-item {
+  background-color: purple;
+  color: white;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  border-radius: 8px;
+}
 /* Flex Container 2 */
+.flex-container-2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: right;
+  gap: 10px;
+  max-width: 500px;
+}
 
 /* Flex Container 3 */
 /* use height: 400px; on the container */
+.flex-container-3 {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  flex-direction: column-reverse;
+  column-gap: 200px;
+  row-gap: 10px;
+  height: 400px;
+}
 
 /* Flex Container 4 */
+.flex-container-4 {
+  display: flex;
+  flex-flow: row wrap-reverse;
+  justify-content: space-evenly;
+}
 
 /* Flex Container 5 */
+.flex-container-5 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.flex-container-5 .item1,
+.flex-container-5 .item3,
+.flex-container-5 .item6 {
+  height: 300px;
+}
+.flex-container-5 .item2,
+.flex-container-5 .item8 {
+  height: 400px;
+}
+.flex-container-5 .item4,
+.flex-container-5 .item5,
+.flex-container-5 .item7 {
+  height: 200px;
+}
 
 /* Flex Container 6 */
+.flex-container-6 {
+  height: 300px;
+  flex-flow: column wrap;
+  gap: 10px;
+}
 
 .flex-container-6 .flex-item {
   width: 400px;
